@@ -1,0 +1,84 @@
+/*body*/
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+body {
+  margin-bottom: 25px;
+  margin-left: 0px;
+  padding: 0px;
+  font-size: 100%;
+  font-family: "Noto Sans", sans-serif;
+  color: #F2FFFF;
+  text-shadow: 2px 2px 5px #9E9E9E;
+  background: #00F5FF; }
+
+h2 {
+  margin: .5em 0 0 0;
+  padding-left: 20px;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+/*elements*/
+#timeline {
+  list-style: none;
+  margin: 120px 0 0;
+  padding: 0;
+  border-top: 8px solid #D8F5FF;
+  display: table;
+  border-spacing: 30px 0; }
+  #timeline li {
+    display: table-cell; }
+    #timeline li .relative {
+      position: relative; }
+
+.date {
+  text-align: center;
+  top: -55px;
+  left: 0;
+  right: 0;
+  font-size: 0.95em;
+  line-height: 20px;
+  position: absolute; }
+
+.circle {
+  margin: 0 auto;
+  top: -14px;
+  left: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border: 5px solid #D8F5FF;
+  border-radius: 50%;
+  display: block;
+  position: absolute; }
+
+.content {
+  width: 640px;
+  max-height: 0;
+  margin-top: 40px;
+  vertical-align: top;
+  padding: 50px 15px 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  position: relative; }
+  
+label {
+  font-size: 1.3em;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  width: 640px;
+  display: block;
+  top: 60px;
+  left: 15px; }
+
+.relative label {
+  cursor: auto;
+  width: 640px;
+  transition: width 0.3s linear 0.2s; }
+.relative .circle {
+  background: #FF6400; }
+.content {
+  max-height: 480px;
+  border-color: #D8F5FF;
+  width: 640px; }
