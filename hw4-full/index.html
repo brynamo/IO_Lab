@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+<h1>USGS Earthquake Data</h1>
+
+<table>
+    <tr id="IDs">
+        <th>Event ID</th>
+    </tr>
+    <tr id="Alerts">
+        <th>Alert<strong>*</strong></th>
+    </tr>
+    <tr id="Magn">
+        <th>Magnitude</th>
+    </tr>
+    <tr id="Places">
+        <th>Location</th>
+    </tr>
+    <tr id="GPS">
+        <th>Coordinates</th>
+    </tr>
+    <tr id="Time">
+        <th>Time</th>
+    </tr>
+    <tr id="Update">
+        <th>Updated @</th>
+    </tr>
+    <tr id="Timezone">
+        <th>Timezone</th>
+    </tr>
+    <tr id="URL">
+        <th>URL</th>
+    </tr>
+    <tr id="Detail">
+        <th>Detail</th>
+    </tr>
+    <tr id="Felt">
+        <th>Felt</th>
+    </tr>
+    <tr id="Max">
+        <th>Max</th>
+    </tr>
+    <tr id="InstMax">
+        <th>Inst. Max</th>
+    </tr>
+    <tr id="Status">
+        <th>Status</th>
+    </tr>
+    <tr id="Tsunami">
+        <th>Tsunami</th>
+    </tr>
+    <tr id="Sig">
+        <th>Sig</th>
+    </tr>
+    <tr id="Net">
+        <th>Net</th>
+    </tr>
+    <tr id="Code">
+        <th>Code</th>
+    </tr>
+    <tr id="Sources">
+        <th>Sources</th>
+    </tr>
+    <tr id="Types">
+        <th>Types</th>
+    </tr>
+    <tr id="Nst">
+        <th>Nst</th>
+    </tr>
+    <tr id="Dmin">
+        <th>Dmin</th>
+    </tr>
+    <tr id="Rms">
+        <th>Rms</th>
+    </tr>
+    <tr id="Gap">
+        <th>Gap</th>
+    </tr>
+    <tr id="MagType">
+        <th>MagType</th>
+    </tr>
+    <tr id="Type">
+        <th>Type</th>
+    </tr>
+</table>
+
+<div id="note">
+    <p><strong>*</strong> Alert is on the USGS <strong>PAGER</strong> earthquake impact scale.<br>The scale is: "null", “green”, “yellow”, “orange”, “red”.</p>
+
+</div>
+
+<button class="btn btn-1 btn-1b" id="NewDATA">Check For New Data</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Source Code Pro', Arial;
+    margin: 0px;
+    border-bottom: 5px solid #000000;
+    border-left:  5px solid #000000;
+    padding-left: 1em;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px 50px;
+}
+
+table tr {
+    text-align: left;
+}
+
+tr:hover td {
+    color: #FFF;
+    -webkit-transition: color 0.6s linear;
+    -moz-transition: color 0.6s linear;
+    -o-transition: color 0.6s linear;
+    -ms-transition: color 0.6s linear;
+    transition: color 0.6s linear;
+    background-color:#000;
+    -webkit-transition: background-color 0.6s linear;
+    -moz-transition: background-color 0.6s linear;
+    -o-transition: background-color 0.6s linear;
+    -ms-transition: background-color 0.6s linear;
+    transition: background-color 0.6s linear;
+}
+
+table th {
+    padding: .5em 2em;
+    border-right: 2px solid black;
+}
+
+table td {
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 15px 60px;
+    display: inline-block;
+    margin: 0px 0em 1em 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#NewDATA {
+    float: right;
+}
+
+.btn-1 {
+    border: 3px solid #000;
+    color: #000;
+}
+
+.btn-1b {
+    overflow: hidden;
+}
+
+.btn-1b:after {
+    width: 0;
+    height: 103%;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-1b:hover,
+.btn-1b:active {
+    color: #FFF;
+}
+
+.btn-1b:hover:after {
+    width: 90%;
+    opacity: 1;
+}
+
+.btn-1b:active:after {
+    width: 101%;
+    opacity: 1;
+}
+
+#note p {
+    margin: 0px 0px 0px 0em;
+    float: left;
+}

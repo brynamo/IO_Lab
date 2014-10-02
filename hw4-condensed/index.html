@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+<h1>USGS Earthquake Data</h1>
+
+<table>
+    <tr id="IDs">
+        <th>Event ID</th>
+    </tr>
+    <tr id="Alerts">
+        <th>Alert<strong>*</strong></th>
+    </tr>
+    <tr id="Magn">
+        <th>Magnitude</th>
+    </tr>
+    <tr id="Places">
+        <th>Location</th>
+    </tr>
+    <tr id="GPS">
+        <th>Coordinates</th>
+    </tr>
+    <tr id="Time">
+        <th>Time</th>
+    </tr>
+</table>
+
+<div id="note">
+    <p><strong>*</strong> Alert is on the USGS <strong>PAGER</strong> earthquake impact scale.<br>The scale is: "null", “green”, “yellow”, “orange”, “red”.</p>
+
+</div>
+
+<button class="btn btn-1 btn-1b" id="NewDATA">Check For New Data</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
