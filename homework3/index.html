@@ -13,25 +13,26 @@
 <body>
     
 	<div id="container">
-
+		<h1>Bryan's Awesome To-Do List</h1>
 		<!-- the to-do list -->
-		<div class="column">
+		<div class="item-column">
 			<ul id="todo-list">
-			    <li>Item #1 <a href="#" class="todo-list-remove">remove</a></li>
-			    <li>Item #2 <a href="#" class="todo-list-remove">remove</a></li>
+			    <li class="first2">Item #1 <button class="todo-list-first2">clear list</button></li>
+			    <li class="first2">Item #2 <button class="todo-list-first2">clear list</button></li>
 			</ul>
 		</div>
 
 		<!-- form to add an item to the list -->
-		<div class="column">
+		<div class="entry-column">
 			<form id="todo-form">
 			    <label>Add an item</label><br/>
-			    <input name="todo-form-add" id="todo-form-add" type="text" placeholder="New item">
-			    <input type="submit">
+			    <input class="txt_box_add" name="todo-form-add" id="todo-form-add" type="text" placeholder="Add an item &#xe600;">
+			    <button class="submit-button" id="add-todo" type="button">Submit</button>
 			</form> 
+			<p><button onclick="geoFindMe()">Show my location</button></p>
+			<div id="out"></div>
 		</div>
-
 	</div>
-
+	
 </body>
 </html>
