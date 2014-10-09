@@ -1,0 +1,117 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+#map {
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+}
+
+#data{
+    z-index: 1000;
+    position: absolute;
+    bottom:0;
+    width: 35%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#dataTable td {
+    border-bottom: 1px solid #000;
+    border-left: 3px solid #000;
+}
+
+.leaflet-popup-content{
+    font-size: 1.25em;
+}
+
+.leaflet-popup-content-wrapper{
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.leaflet-popup-close-button{
+    padding-right: 25px;
+}
+
+#newData {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 15px 60px;
+    display: block;
+    margin: 1em 0em 0em 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-1 {
+    border: 3px solid rgb(127,196,204);
+    color: rgb(127,196,204);
+}
+
+.btn-1b {
+    overflow: hidden;
+}
+
+.btn-1b:after {
+    width: 0;
+    height: 103%;
+    top: 50%;
+    left: 50%;
+    background: rgb(127,196,204);
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-1b:hover,
+.btn-1b:active {
+    color: #FFF;
+}
+
+.btn-1b:hover:after {
+    width: 90%;
+    opacity: 1;
+}
+
+.btn-1b:active:after {
+    width: 101%;
+    opacity: 1;
+}
