@@ -1,0 +1,55 @@
+body {
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+   font-size: 12pt;
+   line-height: 1.375;
+}
+h1, h2, h3, h4, h5, figcaption, caption {
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+a:link {
+   color: rgb(75,75,75);
+}
+
+a:link:visited {
+   color: rgb(75,75,75);
+}
+
+a:link:hover {
+   color: rgb(125,125,125);
+}
+
+article header {
+   padding-left: 2em;
+}
+
+article > section {
+   padding-left: 2em;
+}
+
+*[typeof="Instructor"] *[property=name] {
+   display: block;
+}
+*[typeof="Instructor"] *[property=email] {
+   display: block;
+}
+*[typeof="Instructor"] *[property=twitter] {
+   display: block;
+}
+
+*[typeof*="Meeting"] {
+   margin-top: 0em;
+   margin-bottom: 0em;
+   padding-left: 1em;
+   padding-right: 1em;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+}
+
+*[typeof*="Meeting"] h3 {
+   font-weight: normal;
+}
+
+*[typeof*="Week0"], *[typeof*="Week2"], *[typeof*="Week4"], *[typeof*="Week6"], *[typeof*="Week8"], *[typeof*="Week10"], *[typeof*="Week12"], *[typeof*="Week14"] {
+   background-color: rgb(240,240,240);
+}
